@@ -1,351 +1,208 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>SDG For All</title>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SDG For All</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Victor+Mono:wght@100&display=swap" rel="stylesheet">
-
-
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
-
-
   <style>
-    body,
-    h1,
-    h2 {
-      font-family: "Victor", monospace
-    }
-
-    body,
-    html {
-      height: 100%
-    }
-
-    p {
-      line-height: 2;
-      font-size: larger;
-    }
-
-    .bgimg,
-    .bgimg2 {
-      min-height: 100%;
-      background-position: center;
-      background-size: cover;
-    }
-
-    .bgimg {
-      background-image: url("pate.png")
-    }
-
-    .fit {
-      height: fit-content;
-    }
-
-    .bgimg2 {
-      background-image: url("pedd.jpg")
+    body {
+      font-family: 'Victor Mono', monospace;
     }
   </style>
 </head>
 
-<body>
+<body class="bg-gray-100 text-gray-900">
 
-  <header class="bgimg w3-limey w3-display-container w3-wide fit " id="home">
-
-    <div class="w3-display-middle w3-text-white w3-center">
-
-      <h1>
-        <a class="typewrite heading" data-period="2000"
-          data-type='[ "Sustainable Cities", "Cleaner Future", "Happy Earth"]'>
+  <header class="bg-cover bg-center h-screen" style="background-image: url('pate.png');" id="home">
+    <div class="flex items-center justify-center h-full text-white text-center">
+      <h1 class="text-4xl md:text-6xl font-bold">
+        <a class="typewrite heading" data-period="2000" data-type='[ "Sustainable Cities", "Cleaner Future", "Happy Earth"]'>
           <span class="wrap"></span>
         </a>
       </h1>
     </div>
   </header>
 
-  <div class="w3-bottom w3-hide-small">
-    <div class="w3-bar w3-white w3-center w3-opacity-min w3-hover-opacity-min">
-      <a href="#home" style="width:25%;height: 30%;padding: 20px;" class=" w3-bar-item w3-button">Our Aim</a>
-      <a href="#targets" style="width:25%;height: 30%;padding: 20px;" class=" w3-bar-item w3-button">Solutions</a>
-      <a href="#stats" style="width:25%;height: 30%;padding: 20px;" class=" w3-bar-item w3-button">Stats</a>
-      <a href="#donate" style="width:25%;height: 30%;padding: 20px;" class=" w3-bar-item w3-button">Donate</a>
+  <nav class="fixed bottom-0 w-full bg-white shadow-lg">
+    <div class="flex justify-around py-4">
+      <a href="#home" class="text-gray-700 hover:text-gray-900">Our Aim</a>
+      <a href="#targets" class="text-gray-700 hover:text-gray-900">Solutions</a>
+      <a href="#stats" class="text-gray-700 hover:text-gray-900">Stats</a>
+      <a href="#donate" class="text-gray-700 hover:text-gray-900">Donate</a>
     </div>
-  </div>
+  </nav>
 
-
-  <div id="targets" class="w3-display-container bgimg2">
-    <div class="w3-display-middle w3-text-white w3-center">
-      <h1 class="w3-jumbo"></h1><br>
+  <section id="targets" class="bg-cover bg-center h-screen" style="background-image: url('pedd.jpg');">
+    <div class="flex items-center justify-center h-full text-white text-center">
+      <h1 class="text-4xl md:text-6xl font-bold">THE SOLUTION!!!</h1>
+      <h2 class="text-2xl md:text-4xl mt-4">Affordable and Sustainable Housing.</h2>
     </div>
-  </div>
+  </section>
 
-  <div class="w3-container w3-padding-64 w3-limey  w3-center" id="wedding">
-    <div class="w3-content">
-      <p><i>SDG 11 refers to Sustainable Development Goal 11, which is part of the 17 Sustainable Development Goals
-          established by the United Nations. SDG 11 is focused on making cities and human settlements inclusive, safe,
-          resilient, and sustainable. Its full title is "Make cities and human settlements inclusive, safe, resilient,
-          and sustainable."
-          With current rise in urban population and increase in carbon emmisions, we must aim more sustai nable
-          communities or else the plant's collapse will not be far of. One of the issues we are focusing on
-          <b>Affordable houses and infrastructure.</b></is></i>
-      </p><br>
+  <section class="py-16 bg-green-100 text-center">
+    <div class="container mx-auto px-4">
+      <p class="text-lg md:text-xl">
+        SDG 11 refers to Sustainable Development Goal 11, which is part of the 17 Sustainable Development Goals
+        established by the United Nations. SDG 11 is focused on making cities and human settlements inclusive, safe,
+        resilient, and sustainable. Its full title is "Make cities and human settlements inclusive, safe, resilient,
+        and sustainable."
+        With current rise in urban population and increase in carbon emissions, we must aim more sustainable
+        communities or else the planet's collapse will not be far off. One of the issues we are focusing on
+        <b>Affordable houses and infrastructure.</b>
+      </p>
     </div>
+  </section>
 
-  </div>
+  <section class="py-16 bg-white text-center">
+    <div class="container mx-auto px-4">
+      <p class="text-lg md:text-xl mb-8">
+        <a target="_blank" rel="noopener noreferrer" href="https://abc.8priyanshugupta.repl.co/medias.html"
+          class="bg-black text-white hover:bg-gray-800 py-2 px-4 rounded">Link To Explanatory Video</a>
+      </p>
 
-
-  <div id="targets" class="w3-display-container bgimg2">
-    <div class="w3-display-middle w3-text-white w3-center">
-      <h1 class="w3-jumbo">THE SOLUTION!!!</h1><br>
-      <h2>Affordable and Sustainable Housing.</h2>
-    </div>
-  </div>
-
-  <div class="w3-container w3-padding-64 w3-limey  w3-center" id="wedding">
-    <div class="w3-content">
-      <p class="w3-center"><a target="_blank" rel="noopener noreferrer"
-          href="https://abc.8priyanshugupta.repl.co/medias.html"
-          class="w3-button w3-hover-black w3-black w3-round w3-padding-large w3-large">Link To Explanatory Video</a></p>
-      <br>
-
-      <hr style="height:2px;border-width:0;color:gray;background-color:gray">
-      <div>
-        <div style="display: flex;">
-          <p class="txtpt">Urban Planning and Design: Implement integrated urban planning and design strategies that
+      <div class="space-y-8">
+        <div class="flex flex-col md:flex-row items-center">
+          <p class="md:w-1/2 text-left">Urban Planning and Design: Implement integrated urban planning and design strategies that
             promote compact, mixed-use development, efficient land use, and the preservation of green spaces. Plan
-            cities with a focus on walkability, accessibility, and the efficient use of resources.
-          </p>
-          <img class="imgpt" src="1.jpg">
+            cities with a focus on walkability, accessibility, and the efficient use of resources.</p>
+          <img class="md:w-1/2" src="1.jpg" alt="Urban Planning and Design">
         </div>
-        <br>
-        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
-        <br>
-        <div style="display: flex;">
-          <img class="imgpt" src="1.jpg">
-          <p class="txtpt">Sustainable Transportation: Develop and promote sustainable transportation systems, including
+
+        <div class="flex flex-col md:flex-row items-center">
+          <img class="md:w-1/2" src="1.jpg" alt="Sustainable Transportation">
+          <p class="md:w-1/2 text-left">Sustainable Transportation: Develop and promote sustainable transportation systems, including
             public transit, cycling infrastructure, and pedestrian-friendly streets. Encourage the use of electric
             vehicles, carpooling, and promote efficient public transportation networks to reduce traffic congestion, air
-            pollution, and carbon emissions.
-          </p>
-
+            pollution, and carbon emissions.</p>
         </div>
-        <br>
-        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
-        <br>
-        <div style="display: flex;">
-          <p class="txtpt">
-            Energy Efficiency: Promote energy-efficient practices and technologies in buildings, industries, and
+
+        <div class="flex flex-col md:flex-row items-center">
+          <p class="md:w-1/2 text-left">Energy Efficiency: Promote energy-efficient practices and technologies in buildings, industries, and
             infrastructure. Encourage the use of renewable energy sources such as solar and wind power. Implement
             energy-efficient building codes, promote energy conservation, and support the development of smart grids and
             green building practices.</p>
-          <img class="imgpt" src="2.jpg">
+          <img class="md:w-1/2" src="2.jpg" alt="Energy Efficiency">
         </div>
-        <br>
-        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
-        <br>
-        <div style="display: flex;">
-          <img class="imgpt" src="3.jpg">
-          <p class="txtpt">Waste Management: Implement comprehensive waste management systems that prioritize waste
+
+        <div class="flex flex-col md:flex-row items-center">
+          <img class="md:w-1/2" src="3.jpg" alt="Waste Management">
+          <p class="md:w-1/2 text-left">Waste Management: Implement comprehensive waste management systems that prioritize waste
             reduction, recycling, and proper disposal. Promote waste separation, recycling programs, and the development
             of circular economy models to minimize waste generation and maximize resource recovery.</p>
-
         </div>
-        <br>
-        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
-        <br>
-        <div style="display: flex;">
-          <p class="txtpt">Water Management: Adopt sustainable water management practices, including efficient water
+
+        <div class="flex flex-col md:flex-row items-center">
+          <p class="md:w-1/2 text-left">Water Management: Adopt sustainable water management practices, including efficient water
             use, rainwater harvesting, wastewater treatment, and water conservation measures. Promote water-sensitive
             urban design to manage stormwater runoff and protect water quality.</p>
-          <img class="imgpt" src="4.jpg">
+          <img class="md:w-1/2" src="4.jpg" alt="Water Management">
         </div>
-        <br>
-        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
-        <br>
-        <div style="display: flex;">
-          <img class="imgpt" src="5.jpg">
-          <p class="txtpt">Green Infrastructure: Develop and preserve green spaces, parks, and urban forests. Create and
+
+        <div class="flex flex-col md:flex-row items-center">
+          <img class="md:w-1/2" src="5.jpg" alt="Green Infrastructure">
+          <p class="md:w-1/2 text-left">Green Infrastructure: Develop and preserve green spaces, parks, and urban forests. Create and
             maintain green roofs, vertical gardens, and urban agriculture initiatives to enhance biodiversity, mitigate
             urban heat island effects, and improve air quality.</p>
-
         </div>
-        <br>
-        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
-        <br>
-        <div style="display: flex;">
-          <p class="txtpt">Inclusive Housing: Ensure access to affordable and adequate housing for all residents.
+
+        <div class="flex flex-col md:flex-row items-center">
+          <p class="md:w-1/2 text-left">Inclusive Housing: Ensure access to affordable and adequate housing for all residents.
             Develop inclusive housing policies, promote mixed-income neighborhoods, and provide affordable housing
             options for low-income communities.</p>
-          <img class="imgpt" src="6.jpg">
+          <img class="md:w-1/2" src="6.jpg" alt="Inclusive Housing">
         </div>
-        <br>
-        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
-        <br>
-        <div style="display: flex;">
-          <img class="imgpt" src="7.jpg">
-          <p class="txtpt">Social Inclusion and Equity: Foster social inclusion and equitable access to services and
+
+        <div class="flex flex-col md:flex-row items-center">
+          <img class="md:w-1/2" src="7.jpg" alt="Social Inclusion and Equity">
+          <p class="md:w-1/2 text-left">Social Inclusion and Equity: Foster social inclusion and equitable access to services and
             opportunities. Prioritize community engagement, participatory decision-making processes, and involve diverse
             stakeholders in urban planning and development. Ensure that marginalized and vulnerable communities have
             equal access to essential services, infrastructure, and opportunities.</p>
-
         </div>
-        <br>
-        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
-        <br>
-        <div style="display: flex;">
-          <p class="txtpt">Digital Innovation: Utilize digital technologies and innovations to enhance urban services,
+
+        <div class="flex flex-col md:flex-row items-center">
+          <p class="md:w-1/2 text-left">Digital Innovation: Utilize digital technologies and innovations to enhance urban services,
             optimize resource use, and improve efficiency. Implement smart city solutions for energy management,
             transportation, waste management, and public services to create sustainable and interconnected urban
             ecosystems.</p>
-          <img class="imgpt" src="8.jpg">
+          <img class="md:w-1/2" src="8.jpg" alt="Digital Innovation">
         </div>
-        <br>
-        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
-        <br>
-        <div style="display: flex;">
-          <img class="imgpt" src="9.jpg">
-          <p class="txtpt">Education and Awareness: Raise awareness and educate residents about sustainable practices,
+
+        <div class="flex flex-col md:flex-row items-center">
+          <img class="md:w-1/2" src="9.jpg" alt="Education and Awareness">
+          <p class="md:w-1/2 text-left">Education and Awareness: Raise awareness and educate residents about sustainable practices,
             behavior change, and the importance of sustainable development. Promote sustainable lifestyle choices,
             environmental stewardship, and community engagement through educational campaigns, public outreach, and
             capacity-building programs.</p>
-
-        </div>
-        <br>
-        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
-        <br>
-
-      </div>
-
-      <h1 class="w3-text-grey" id="stats"><b>THE STATS</b></h1>
-      <img class="w3-round-large" src="stats.jpg" style="width:100%;margin:64px 0">
-
-
-      <div
-        class="coh-inline-element ssa-component coh-component ssa-component-instance-de76d85b-8b94-474f-8549-653af37bbb8e coh-component-instance-de76d85b-8b94-474f-8549-653af37bbb8e stats-card medium swiper-slide swiper-slide-active"
-        role="group" aria-label="1 / 6" style="margin-right: 20px;">
-        <div class="coh-inline-element">
-          <div class="coh-inline-element">
-            <h2 class="coh-heading" style="white-space: nowrap; display: inline-block; font-size: 110px;"> 4.2 </h2>
-          </div>
-        </div>
-        <div class="coh-inline-element">
-          <h4 class="coh-heading"> billion </h4>
-          <p class="coh-paragraph">In 2018, 4.2 billion people, 55 percent of the world’s population, lived in cities.
-            By 2050, the urban population is expected to reach 6.5 billion.</p>
-        </div>
-      </div>
-      <div
-        class="coh-inline-element ssa-component coh-component ssa-component-instance-7848bbf3-0961-4c6d-999b-35b5005a4d0f coh-component-instance-7848bbf3-0961-4c6d-999b-35b5005a4d0f stats-card medium swiper-slide swiper-slide-next"
-        role="group" aria-label="2 / 6" style="margin-right: 20px;">
-        <div class="coh-inline-element">
-          <div class="coh-inline-element">
-            <h2 class="coh-heading" style="white-space: nowrap; display: inline-block; font-size: 110px;"> 3 </h2>
-          </div>
-        </div>
-        <div class="coh-inline-element">
-          <h4 class="coh-heading"> percent </h4>
-          <p class="coh-paragraph">Cities occupy just 3 percent of the Earth’s land but account for 60 to 80 percent
-            of energy consumption and at least 70 percent of carbon emissions.</p>
-        </div>
-      </div>
-      <div
-        class="coh-inline-element ssa-component coh-component ssa-component-instance-fa05cae9-13f7-4900-9171-51067ad072ad coh-component-instance-fa05cae9-13f7-4900-9171-51067ad072ad stats-card medium swiper-slide"
-        role="group" aria-label="3 / 6" style="margin-right: 20px;">
-        <div class="coh-inline-element">
-          <div class="coh-inline-element">
-            <h2 class="coh-heading" style="white-space: nowrap; display: inline-block; font-size: 110px;"> 828 </h2>
-          </div>
-        </div>
-        <div class="coh-inline-element">
-          <h4 class="coh-heading"> million </h4>
-          <p class="coh-paragraph">828 million people are estimated to live in slums, and the number is rising.</p>
-        </div>
-      </div>
-      <div
-        class="coh-inline-element ssa-component coh-component ssa-component-instance-4989e83c-cf11-4c4b-aec6-87e17b139a41 coh-component-instance-4989e83c-cf11-4c4b-aec6-87e17b139a41 stats-card medium swiper-slide"
-        role="group" aria-label="4 / 6" style="margin-right: 20px;">
-        <div class="coh-inline-element">
-          <div class="coh-inline-element">
-            <h2 class="coh-heading" style="white-space: nowrap; display: inline-block; font-size: 110px;"> 33 </h2>
-          </div>
-        </div>
-        <div class="coh-inline-element">
-          <h4 class="coh-heading"> cities </h4>
-          <p class="coh-paragraph">In 1990, there were 10 cities with 10 million people or more; by 2014, the number
-            of mega-cities rose to 28, and was expected to reach 33 by 2018. In the future, 9 out of 10 mega-cities
-            will be in the developing world.</p>
-        </div>
-      </div>
-      <div
-        class="coh-inline-element ssa-component coh-component ssa-component-instance-e767ed44-31ad-4dc1-938c-d249b4c671f6 coh-component-instance-e767ed44-31ad-4dc1-938c-d249b4c671f6 stats-card medium swiper-slide"
-        role="group" aria-label="5 / 6" style="margin-right: 20px;">
-        <div class="coh-inline-element">
-          <div class="coh-inline-element">
-            <h2 class="coh-heading" style="white-space: nowrap; display: inline-block; font-size: 110px;"> 90 </h2>
-          </div>
-        </div>
-        <div class="coh-inline-element">
-          <h4 class="coh-heading"> percent </h4>
-          <p class="coh-paragraph">In the coming decades, 90 percent of urban expansion will be in the developing
-            world.</p>
-        </div>
-      </div>
-      <div
-        class="coh-inline-element ssa-component coh-component ssa-component-instance-986be99d-a652-4a65-bf06-0ffb1a32be56 coh-component-instance-986be99d-a652-4a65-bf06-0ffb1a32be56 stats-card medium swiper-slide"
-        role="group" aria-label="6 / 6">
-        <div class="coh-inline-element">
-          <div class="coh-inline-element">
-            <h2 class="coh-heading" style="white-space: nowrap; display: inline-block; font-size: 110px;"> 80 </h2>
-          </div>
-        </div>
-        <div class="coh-inline-element">
-          <h4 class="coh-heading"> percent </h4>
-          <p class="coh-paragraph">The economic role of cities is significant. They generate about 80 percent of the
-            global GDP.</p>
         </div>
       </div>
     </div>
+  </section>
 
-  </div>
+  <section class="py-16 bg-green-100 text-center" id="stats">
+    <h1 class="text-4xl md:text-6xl font-bold mb-8">THE STATS</h1>
+    <img class="w-full rounded-lg mb-8" src="stats.jpg" alt="Stats">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="bg-white p-8 rounded-lg shadow-lg">
+        <h2 class="text-6xl font-bold">4.2</h2>
+        <h4 class="text-2xl">billion</h4>
+        <p>In 2018, 4.2 billion people, 55 percent of the world’s population, lived in cities. By 2050, the urban population is expected to reach 6.5 billion.</p>
+      </div>
+      <div class="bg-white p-8 rounded-lg shadow-lg">
+        <h2 class="text-6xl font-bold">3</h2>
+        <h4 class="text-2xl">percent</h4>
+        <p>Cities occupy just 3 percent of the Earth’s land but account for 60 to 80 percent of energy consumption and at least 70 percent of carbon emissions.</p>
+      </div>
+      <div class="bg-white p-8 rounded-lg shadow-lg">
+        <h2 class="text-6xl font-bold">828</h2>
+        <h4 class="text-2xl">million</h4>
+        <p>828 million people are estimated to live in slums, and the number is rising.</p>
+      </div>
+      <div class="bg-white p-8 rounded-lg shadow-lg">
+        <h2 class="text-6xl font-bold">33</h2>
+        <h4 class="text-2xl">cities</h4>
+        <p>In 1990, there were 10 cities with 10 million people or more; by 2014, the number of mega-cities rose to 28, and was expected to reach 33 by 2018. In the future, 9 out of 10 mega-cities will be in the developing world.</p>
+      </div>
+      <div class="bg-white p-8 rounded-lg shadow-lg">
+        <h2 class="text-6xl font-bold">90</h2>
+        <h4 class="text-2xl">percent</h4>
+        <p>In the coming decades, 90 percent of urban expansion will be in the developing world.</p>
+      </div>
+      <div class="bg-white p-8 rounded-lg shadow-lg">
+        <h2 class="text-6xl font-bold">80</h2>
+        <h4 class="text-2xl">percent</h4>
+        <p>The economic role of cities is significant. They generate about 80 percent of the global GDP.</p>
+      </div>
+    </div>
+  </section>
 
-  <div class="w3-sepia-min w3-container w3-padding-64 w3-limey w3-center w3-wide" id="donate">
-    <h1>CONTRIBUTE FOR A BETTER FUTURE!</h1>
-    <p class="w3-large">We send all the collected doantion to startups leading in sustainable city management.</p>
-    <p class="w3-xlarge">
-      <button onclick="document.getElementById('id01').style.display='block'"
-        class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" style="padding:8px 60px">DONATE!</button>
-    </p>
-  </div>
+  <section class="py-16 bg-green-100 text-center" id="donate">
+    <h1 class="text-4xl md:text-6xl font-bold mb-8">CONTRIBUTE FOR A BETTER FUTURE!</h1>
+    <p class="text-lg md:text-xl mb-8">We send all the collected donations to startups leading in sustainable city management.</p>
+    <button onclick="document.getElementById('id01').style.display='block'" class="bg-red-500 text-white hover:bg-red-700 py-2 px-8 rounded">DONATE!</button>
+  </section>
 
-
-  <div id="id01" class="w3-modal">
-    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
-      <div class="w3-container w3-white w3-center">
-        <h1 class="w3-wide">Any Amount is Appricieated</h1>
-        <p>Make a change for the better</p>
-        <form>
-          <input class="w3-input w3-border" type="text" placeholder="Amount ($5)" name="name">
-        </form>
-        <p><i>Thank you for your contibution</i></p>
-        <div class="w3-row">
-          <div class="w3-half">
-            <button onclick="document.getElementById('id01').style.display='none'" type="button"
-              class="w3-button w3-block w3-green">Donate 🪙</button>
-          </div>
-          <div class="w3-half">
-            <button onclick="document.getElementById('id01').style.display='none'" type="button"
-              class="w3-button w3-block w3-red">Quit ❌</button>
-          </div>
-        </div>
+  <div id="id01" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
+    <div class="bg-white p-8 rounded-lg shadow-lg max-w-md w-full">
+      <h1 class="text-2xl font-bold mb-4">Any Amount is Appreciated</h1>
+      <p class="mb-4">Make a change for the better</p>
+      <form>
+        <input class="w-full p-2 border border-gray-300 rounded mb-4" type="text" placeholder="Amount ($5)" name="name">
+      </form>
+      <p class="italic mb-4">Thank you for your contribution</p>
+      <div class="flex justify-between">
+        <button onclick="document.getElementById('id01').style.display='none'" class="bg-green-500 text-white hover:bg-green-700 py-2 px-4 rounded">Donate 🪙</button>
+        <button onclick="document.getElementById('id01').style.display='none'" class="bg-red-500 text-white hover:bg-red-700 py-2 px-4 rounded">Quit ❌</button>
       </div>
     </div>
   </div>
